@@ -1,14 +1,15 @@
 install:
 	@echo "Installing..."
-	@pip install -r requirements.txt
+	@python3 -m venv myenv
+	@myenv/bin/pip install -r requirements.txt
 	@echo "Done."
 
 test:
 	@echo "Running tests..."
-	@pytest
+	@myenv/bin/pytest
 	@echo "Done."
 
 run:
 	@echo "Running..."
-	@flask --app lib/app.py run
+	@myenv/bin/flask --app lib/app.py run
 	@echo "Done."
