@@ -1,22 +1,28 @@
-Instrukcja uruchomienia
-Sklonuj repozytorium i przejdź do katalogu projektu.
+# Flask Hello World
 
-bash
-Copy code
-git clone <repo-url>
-cd hello_flask
-Zainstaluj zależności:
+Hello world Flaska wraz z testami 
 
-bash
-Copy code
-make install
-Uruchom testy jednostkowe:
+  
+## Instalacja:
+1. Sklonuj repo
+	```bash
+	git  clone <repo-url>
+	cd  2
+	```
 
-bash
-Copy code
+2. Zainstaluj zależności:
+	```bash
+	make install
+	```
+
+## Uruchomienie
+
+Testy jednostkowe
+```bash
 make test
-Uruchom aplikację:
+```
 
-bash
-Copy code
+Aplikacja
+```bash
 make run
+```
